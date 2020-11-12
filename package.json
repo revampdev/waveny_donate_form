@@ -5,5 +5,6 @@
   "main": "index.js",
   "author": "James Weis <jw@revamp.dev>",
   "license": "MIT",
-  "private": true
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
+
