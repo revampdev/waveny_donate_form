@@ -1,5 +1,5 @@
 {
-  "name": "waveny_donate_form",
+  "name": "@revampdev/waveny_donate_form",
   "version": "1.0.0",
   "description": "Embed Bloomerang Form for Webflow",
   "main": "index.js",
