@@ -1,0 +1,9 @@
+{
+  "name": "waveny_donate_form",
+  "version": "1.0.0",
+  "description": "Embed Bloomerang Form for Webflow",
+  "main": "index.js",
+  "author": "James Weis <jw@revamp.dev>",
+  "license": "MIT",
+  "private": true
+}
