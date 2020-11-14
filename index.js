@@ -596,7 +596,7 @@ var insertForm270336 = function () {
     "" +
     "</div>" +
     '    <div class="btn-group">' +
-    '      <button data-sitekey="6Lf2O-IZAAAAAPN9HrvjOZiUUoQVOp_GaOdY6QF_" data-callback="onSubmit" data-action="submit" class="g-recaptcha btn btn-submit btn-submit-donation  button green w-button" type="submit" id="express-submit" disabled="true">Enter Payment</button>' +
+    '      <input btn btn-submit btn-submit-donation  button green w-button" type="submit" id="express-submit" disabled="true" />' +
     "    </div>" +
     "  </form>" +
     "</div>" +
