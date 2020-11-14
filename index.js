@@ -597,6 +597,10 @@ var insertForm270336 = function () {
     "</div>" +
     '    <div class="btn-group">' +
     '      <input btn btn-submit btn-submit-donation  button green w-button" type="submit" id="express-submit" disabled="true" />' +
+    '    <div class="section captcha">' +
+    "      <label id='noCaptchaResponseError' class='error noCaptchaResponseError' style='display: none'>You must fill out the CAPTCHA</label><div id=\"captcha168960\"></div>" +
+    "" +
+    "</div>" +
     "    </div>" +
     "  </form>" +
     "</div>" +
@@ -661,7 +665,27 @@ var insertForm270336 = function () {
 
     Bloomerang.paymentFormLoaded = true;
 
-    jQuery(".donation-form .section.captcha").attr("style", "display: none");
+    // jQuery(".donation-form .section.captcha").attr("style", "display: none");
+    window.captchaLoadCallback = function () {
+      Bloomerang.gRecaptchaLoaded = true;
+    };
+    Bloomerang.Util.load(
+      "https://www.google.com/recaptcha/api.js?onload=captchaLoadCallback&render=explicit",
+      function () {
+        return Bloomerang.gRecaptchaLoaded;
+      },
+      function () {
+        jQuery(".section.captcha").removeAttr("style");
+        jQuery("form.donation-form").data(
+          "captcha-id",
+          grecaptcha.render("donation-form+", {
+            sitekey: "6LfxveIZAAAAAGc1NVjvwE8s8V5yJsRrafmXag0S",
+          })
+        );
+      },
+      true,
+      true
+    );
 
     Bloomerang.transactionFee = 0.3;
     Bloomerang.transactionFeeRate = 0.022;
