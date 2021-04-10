@@ -1,10 +1,11 @@
 {
   "name": "@revampdev/waveny_donate_form",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Embed Bloomerang Form for Webflow",
   "main": "index.js",
   "author": "James Weis <jw@revamp.dev>",
   "license": "MIT",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
-
