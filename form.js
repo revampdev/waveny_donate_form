@@ -132,7 +132,7 @@ var insertForm270336 = function () {
     "</div>" +
     "" +
     "</div>" +
-    '<div class="section"' +
+    '<div class="section" style="padding-left: 30px">' +
     '<label for="cover-cost"><input id="cover-cost" name="cover-cost" type="checkbox" maxlength="255"></input><span class="label">Cover the cost of the donation processing fees</span></label>' +
     "</div>" +
     '    <div class="section recurring">' +
